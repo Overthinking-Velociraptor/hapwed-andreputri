@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <title>Happy Wedding Andre & Putri</title>
+    </head>
+    <body>
+    <p class='text-center'>halooo</p><br>
+    <center><img src="andre and putri/toon.png" alt="Andre and Putri" width="150" style="text-align:center;"></center>
+    <marquee behavior="alternate" class="post-title entry-title" itemprop="name headline" bgcolor="Black" style="color: blue; --darkreader-inline-color:#337dff;" data-darkreader-inline-bgcolor="" data-darkreader-inline-color="">Happy Wedding Andre & Putri</marquee>
+        <div class='position-absolute top-50 start-50 translate-middle'>
+            <button id='button' class='btn btn-primary btn-lg' onclick='mulai()'> Klik di sini dong :) </button>
+            <audio id='bgMusic' src='andre and putri/Ndarboy Genk - Moro Moro Teko.mp3' loop></audio>
+            <div id='iloveyou' style='display: none;'>
+                <h2 class='text-center'><br>&#10084;&#65039;</h2>
+                <h2 class='text-center'>Ciyee ciyeeee<br>&#10084;&#65039;</h2>
+                <h2 class='text-center'>Ihiiiirrr<br>&#10084;&#65039;</h2>
+                <h2 class='text-center'>Sek aseeekk<br>&#10084;&#65039;</h2>
+                <h2 class='text-center'>Sat set sat seetttt mazzeehhh<br>&#10084;&#65039;</h2>
+                <h2 class='text-center'>Happy Wedding Andre & Putri<br>&#10084;&#65039;</h2>
+                <h2 class='text-center'>May God Bless two of you<br>&#10084;&#65039;</h2>
+            </div>
+        </div>
+        <span id='hati' class='fixed-bottom text-center my-3' onclick='hati()'></span><br><br><br><br><br>
+        <div><center><video id='video' width="400" controls>
+            <source src="andre and putri/vid.mp4" type="video/mp4">
+          </video></center>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+        <script type="text/javascript">
+            const author = 'Ian & Bella';
+            document.getElementById('hati').innerHTML = `Made with &#10084;&#65039; by ${author}`;
+            const swals = Swal.mixin({
+                cancelButtonColor: '#d33',
+                confirmButtonColor: '#3085d6',
+            });
+            async function mulai(){
+            	audio = document.getElementById("bgMusic");
+            if (!audioPlaying) audio.play();
+            else audio.pause();
+            audioPlaying = !audioPlaying;
+                await swals.fire('Halo :)', 'Andre dan mbak Putri', 'success');
+                await swals.fire('Maaf yo aku ndak iso teko di hari bahagia kalian berdua');
+                await swals.fire('Pas ndak bisa mulih juga aku');
+                await swals.fire('We are so grateful for both of you');
+                await swals.fire('Hopefully you guys can make a harmony together as a family');
+                await swals.fire('Seperti kata pepatah', 'apa yang sudah dipersatukan Tuhan tidak bisa diceraikan oleh manusia');
+                await swals.fire('Happy Wedding Andre and Putri. May God bless both of you');
+                await swals.fire({
+                        title: `Congratulation!!`,
+                        confirmButtonText: 'Next',
+                        cancelButtonText: 'Exit',
+                        showCancelButton: true,
+                });
+                await swals.fire('We have something for you two', 'Click on the heart icon at the bottom :)');
+        }        
+        function hati(){
+            document.getElementById('button').style = 'display: none';
+            document.getElementById('iloveyou').style = '';
+            startConfetti();
+        }
+        var videoPlaying= false;
+        function vids(){
+            document.getElementById('video').style = 'display: none';
+            if (!videoPlaying) video.play();
+            else video.pause();
+            videoPlaying = !videoPlaying;
+        }
+        var audioPlaying = false;
+        function music(){
+            var audio = document.getElementById("bgMusic");
+            if (!audioPlaying) audio.play();
+            else audio.pause();
+            audioPlaying = !audioPlaying;
+        }
+        </script>
+        <script type="text/javascript" src="https://www.cssscript.com/demo/confetti-falling-animation/confetti.js"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+    <style>
+    body {
+background-image : url("andre and putri/bg.gif");
+background-color : #cccccc;
+height: 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+    </style>
+    
+    </body>
+</html>
